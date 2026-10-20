@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style type="text/tailwindcss">
+        @theme {
+            --color-nvidia: #76B900;
+        }
+    </style>
+
+  </head>
+  <body class="bg-[url('background-nvidia.jpg')] bg-cover bg-center bg-fixed min-h-screen flex flex-col">
+    <nav class="bg-nvidia text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="index.html" class="flex items-center">
+            <img 
+                src="NVIDIA_logo.svg.png" 
+                alt="NVIDIA Logo" 
+                class="h-8 w-auto object-contain brightness-0 invert" 
+            />
+        </a>
+
+
+        <ul class="flex space-x-4 font-bold">
+          <li><a href="products.html" class="hover:underline">Products</a></li>
+          <li><a href="support.html" class="hover:underline">Support</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="flex-1">
+    <div class="text mt-12 mx-auto max-w-2xl px-4 text-center text-white">
+        <h2 class="text-2xl font-bold">NVIDIA Support</h2>
+        <p class="mt-6">
+            NVIDIA's support services are designed to meet the needs of the consumer,
+            with multiple options to help ensure an exceptional customer experience.
+        </p>
+    </div>
+
+    <div class="mt-20 flex mx-auto max-w-4xl divide-x divide-white-50">
+        <div class="bg-black p-8 shadow-lg text-white flex-1 text-center">
+            <h3 class="text-lg font-bold mb-2">Technical Support</h3>
+            <p class="mt-4">For technical issues with our products, please visit our <a href="https://www.nvidia.com/en-us/support/consumer/" class="underline decoration-nvidia decoration-2 underline-offset-4 hover:decoration-white">support page</a>.</p>
+        </div>
+        <div class="bg-black p-8 text-white flex-1 text-center">
+            <h3 class="text-lg font-bold mb-2">Contact us</h3>
+            <p class="mt-4">If you have any questions or need assistance, feel free to open a new <a href="ticket.html" class="underline decoration-nvidia decoration-2 underline-offset-4 hover:decoration-white">support ticket</a>.</p>
+        </div>
+    </div>
+    </main>
+
+    <footer class="border-t border-white/20 py-6 text-center text-sm text-neutral-400">
+        <span>&copy; 2026 NVIDIA Corporation. All rights reserved.</span>
+    </footer>
+
+  </body>
+</html>
